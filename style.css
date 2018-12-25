@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+
+  body {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color:orangered;
+}
+
+header {
+    background-image: url('mugic.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover-blur {
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+nav ul {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    /* animation: enter 3s ease-in;
+    animation-fill-mode: forwards; */
+}
+
+nav ul li {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 18px;
+    font-weight: bold;
+   
+}
+
+@media(max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 1px;
+    }
+
+}
+
+#title {
+   text-align: center;
+   color: #F06022;
+   margin-top:170px;
+   font-weight: bold;
+}
+
+#dev {
+   
+    font-size: 60px;
+    align-items: center;
+}
+
+#intro {
+    font-size:30px;
+    font-weight: bolder;
+}
+
+#about {
+    height: 320px;
+    margin:70px;
+    text-align: center;
+    color: #F06022;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top:60px;
+    margin-bottom: 40px;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+#skills {
+    height: 380px;
+    background:black;
+    text-align: center;
+}
+
+#skills h1 {
+    color:white;
+    font-size: 30px;
+    margin-bottom: 55px;
+    padding-top: 60px;
+}
+
+#skills div ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#skills div ul li p {
+    color:white;
+    margin-top:17px;
+    font-size:17px;
+    margin-bottom: 60px;
+}
+
+#skills div ul li img {
+    height: 128px;
+    width: 138px;
+}
+
+@media(max-width: 700px) {
+    #skills div ul {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* #skills div ul li {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } OVO NIJE DOBRO */
+
+    nav ul li {
+        margin: 1px;
+    }
+
+}
+
+#cert h1{
+    color:white;
+    font-size: 30px;
+    margin-top:60px;
+    margin-bottom: 40px;
+}
+
+
+
+/* ICON STYLE */
+
+
+.fa-html5 {
+    color:#f16529;
+}
+
+.fa-css3-alt {
+    color: #1572b6;
+   
+}
+
+.fa-js {
+    color: #f7df1e;
+}
+
+.fa-wordpress {
+    color: #464646;
+}
+
+.fa-sass {
+    color:#cc6699
+}
+
+.fa-adobe {
+    color:red;
+}
+
+/* color:#5e4287 bootstrap */
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 7.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+/* /////////CONTACT//////////////////// */
+
+#contact {
+    height: 380px;
+    /* background:black; */
+    text-align: center;
+    color:orangered;
+}
+
+#contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact ul li {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+/* icons style */
+
+#contact ul li i {
+    color:orangered;
+}
+
+.fa-mobile-alt {
+    margin-left:8px;
+}
+
+#contact ul li span {
+    margin-left: 10px; 
+}
+
+#contact ul li a {
+    color:orangered;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
